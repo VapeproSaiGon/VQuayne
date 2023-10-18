@@ -11,7 +11,7 @@
 	width: 4px;
 }
 
-@media (min-width: 300px) and (max-width: 420px) { 
+@media (min-width: 200px) and (max-width: 420px) { 
 .diachi{
   margin-top: 50px;
   display: flex;
