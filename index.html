@@ -416,7 +416,7 @@
           <div class="close-btnn">×</div>
           <div class="custom-model-wrapp">
             <div class="pop-up-content-wrapp">
-             | Tặng thêm NetFilx 1 Month Khi hoàn thành đơn hàng| Khách nhớ Click Button ở Web để về FanPage VapePro SaiGon nhận quà nhee.
+           Khách nhớ Click Button ở Web để về FanPage VapePro SaiGon nhận thêm Túi,Nón.. VapePro khi đủ điều kiện đơn hàng nhee.
             </div>
           </div>  
         </div>  
@@ -716,9 +716,16 @@ document.querySelector('.bg-overlayy').addEventListener('click', function() {
 document.querySelector('.custom-model-mainn').classList.remove('model-openn');
 });
 var popUpContentWrap = document.querySelector('.pop-up-content-wrap');
+var phoneNumberrr = document.querySelector('input[name="SDT"]').value;
 
-var dataContent = psw;
+var dataContent ;
+if (phoneNumberrr) {
+  dataContent = psw;
+} else {
+  dataContent = "Nhập Sdt Trước Khi Quay Nhaa. VapePro cảm ơn sử ủng hộ của bạn thời gian qua!!";
+}
 console.log(dataContent);
+
 popUpContentWrap.textContent = dataContent;
 var phoneNumber = document.querySelector('input[name="SDT"]').value;
 var currentTime = new Date().toLocaleString();
